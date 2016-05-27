@@ -1,4 +1,4 @@
 # TV-HorizontalListView
 TV版的横向ListView
 
-最近在做TV项目的过程中需要用到横向的ListView,起初最先想到的就是用RecycleView,但是在用的过程中出现了很多让人头疼的问题，尤其是焦点控制上，如果想让焦点跑到RecycleView的最后一个item上，mRecyclerView.getChildAt(20).requestFocus()，你设置之后，会奔掉，因为第20个item没有显示出来，这个就很麻烦，所以抽空自己写了一个TV版的横向listview，相比recycleView，listview用起来就简单方便多了
+最近在做TV项目的过程中需要用到横向的ListView,起初最先想到的就是用RecycleView,但是在用的过程中出现了很多让人头疼的问题，尤其是焦点控制上，如果想让焦点跑到RecycleView的最后一个item上，mRecyclerView.getChildAt(20).requestFocus()，你设置之后，会奔掉，因为第20个item没有显示出来，还有，如果你快速移动的时候，焦点会到处乱跑，还是因为你移动的速度过快，而recycleView下面的item没有那么快的显示出来，所以焦点会到处乱跑，这给TV开发带来了很大的困扰，所以抽空自己写了一个TV版的横向listview，相比recycleView，listview用起来就简单方便多了
